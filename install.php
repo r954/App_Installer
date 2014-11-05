@@ -1,6 +1,6 @@
 <!--
 ***************************
-|	Application installer   |
+|	Application installer  |
 ***************************
 -->
 <style>
@@ -14,6 +14,7 @@ padding-bottom: 11px;
 
 <?php
 include("header.php");
+include("function.php");
 ?>
 <!--<div style="border:1px solid blue; width:auto; margin-top:10px;">
 
