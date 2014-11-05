@@ -81,6 +81,7 @@ $('#browse-up').on('click', "#printers", function() {
 	</script>
 
 <?php
+//call application install script
 install_app();
 ?>
 </div>
