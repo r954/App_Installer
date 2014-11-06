@@ -39,7 +39,10 @@ include("function.php");
 </div>
 
 <div id="browse-up" class="draggable" style="height: 289px;  margin-left:-41px; width:721px; border: 1px solid #9A9A9A; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); border-radius: 10px; background: white; display: none">
+<div style="margin-top:20px;">
 
+<div align="center"><input type="file" id="upload" > <input type="checkbox">Append to list
+</div>
 <?php
 
 //location of applications
@@ -70,9 +73,14 @@ foreach
 }}
 ?>
 </div>
+</div>
 <script>
 $('#browse-up').on('click', "#printers", function() {
         $("#path").val($(this).attr('href')); return false
+    });	
+    <!--Append value in upload to application field -->
+    $('#browse-up').on('change', "#upload", function() {
+        $("#path").val($(this).val()); return false
     });	
 	
 	$('#browse').click( function() {
