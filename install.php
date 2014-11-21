@@ -65,7 +65,7 @@ foreach
 ?>
 <ul>
 <li>
-<a  id="printers" href="<?php echo $appfor; ?>"><?php if (strlen($appfor) >= '27') {echo substr($appfor, 0, -15);} else echo  substr($appfor, 0, -4); ?></a>
+<a  id="printers" href="<?php echo $appfor; ?>"><?php if (strlen($appfor) >= '27') { echo substr($appfor, 0, -15);} else if ($appfor == 'SA67WRSM5B735D2827AA.exe') { echo '<img src="images/apps/wr2.jpg"> ';} else if ($appfor == 'LogMeIn.msi') { echo '<img style="width:auto; height:31px; margin-top: -5px;" src="images/apps/lmi.png"> ';} else echo  substr($appfor, 0, -4); ?></a>
 </li>
 </ul>
 
